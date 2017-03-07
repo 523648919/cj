@@ -1,0 +1,14 @@
+CREATE TABLE `employee` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `employee_no` varchar(20) NOT NULL COMMENT '员工编号 唯一',
+  `employee_name` varchar(100) DEFAULT NULL,
+  `mobile` char(11) DEFAULT NULL COMMENT '手机',
+  `image` varchar(255) DEFAULT NULL COMMENT '图片地址',
+  `center` varchar(100) DEFAULT NULL COMMENT '中心',
+  `depart` varchar(100) DEFAULT NULL COMMENT '部门',
+  `status` char(1) DEFAULT '0' COMMENT '状态: 0、未签到 1、已签到 2、已抽奖',
+  `crt_date` datetime DEFAULT NULL COMMENT '签到时间',
+  `remark` varchar(128) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=232 DEFAULT CHARSET=utf8;
+
